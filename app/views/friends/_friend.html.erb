@@ -1,0 +1,13 @@
+<div id="<%= dom_id friend %>">
+  
+  <tr>
+    <td><%= link_to friend.full_name, friend %></td>
+    <td><%= friend.email %></td>
+    <td><%= friend.phone %></td>
+    <td><%= friend.twitter %></td>
+    <%# Uncomment this line below if you want to have an edit button %>
+    <!-- <td><%= link_to 'Edit', edit_friend_path(friend) %></td> -->
+    <td><%= link_to 'Delete', friend, class: "btn btn-outline-danger btn-sm", data: { "turbo-method": :delete, 'turbo-confirm': "Are you sure you want to delete this friend?" } %></td>
+  </tr>
+
+</div>
